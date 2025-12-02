@@ -3,12 +3,12 @@ import { useEffect, useRef } from 'react'
 function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  useEffect(() => {
+  const handleLoadedMetadata = () => {
     if (videoRef.current) videoRef.current.playbackRate = 2;
-  }, [])
+  }
 
   return (
-    <section className="hero">
+    <section id="hero">
       <div>
         <h1>MacBook Pro</h1>
         <img
@@ -20,6 +20,7 @@ function Hero() {
       <video
         ref={videoRef}
         src="/videos/hero.mp4"
+        onLoadedMetadata={handleLoadedMetadata}
         autoPlay
         muted
         playsInline
