@@ -1,10 +1,10 @@
-import NavBar from "./components/NavBar"
+import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 
 function App() {
   return (
     <main>
-      <NavBar />
+      <Navbar />
       <Hero />
     </main>
   )

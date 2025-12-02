@@ -1,6 +1,6 @@
 import { navLinks } from "../constants"
 
-function NavBar() {
+function Navbar() {
   return (
     <header>
       <nav>
@@ -25,6 +25,7 @@ function NavBar() {
             <img
               src="/cart.svg"
               alt="Cart"
+              aria-label="Cart Image"
             />
           </button>
         </div>
@@ -33,4 +34,4 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default Navbar
